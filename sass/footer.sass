@@ -1,0 +1,100 @@
+@import "vars"
+
+footer
+	padding: 60px 0 20px
+	text-align: center
+	background: #000
+	color: #fff
+	line-height: 120%
+	.container
+		flex-direction: column
+		align-items: center
+	a
+		margin: 0 auto
+	.box-text
+		margin: 0 auto 19px
+		line-height: 120%
+		p
+			margin: 0
+
+.insta-text
+	margin: 0 auto 26px
+	font-size: 12px
+	
+.link-developer
+	margin: 40px auto 0
+	text-decoration: underline
+	color: #fff
+	&:hover
+		color: $accent
+
+
+// modal	
+.modal__div
+	position: fixed
+	max-width: 600px
+	width: 100%
+	height: 100%
+	top: 45%
+	left: 50%
+	transform: translate(-50%, -50%)
+	z-index: 101
+	overflow: auto
+	justify-content: center
+	align-items: center
+	flex-direction: column
+	display: none
+	opacity: 0
+
+.modal__close
+	position: absolute
+	right: 10px
+	top: 10px
+	width: 24px
+	height: 24px
+	cursor: pointer
+	&::before, &::after
+		content: ''
+		position: absolute
+		top: 12px
+		left: 0
+		width: 2px
+		height: 100%
+		background: $accent
+	&::before
+		transform: rotate(45deg)
+	&:after
+		transform: rotate(135deg)	
+
+.modal__wrapper
+	background: #fff
+	width: 100%
+	height: auto
+	overflow: auto
+	margin: 50px auto
+	padding: 40px 20px
+	box-sizing: border-box
+	position: relative
+
+.modal__title
+	text-align: center
+	font-size: 30px
+	font-weight: 900
+	text-transform: uppercase
+
+.modal__content
+	margin: 20px 0 0
+
+.overlay
+	z-index: 100
+	position: fixed
+	background-color: #000
+	opacity: 0.8
+	-moz-opacity: 0.8
+	filter: alpha(opacity = 80)
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	cursor: pointer
+	display: none

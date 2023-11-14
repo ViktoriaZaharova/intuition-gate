@@ -1,0 +1,22 @@
+@import "vars"
+
+header
+	position: absolute
+	z-index: 3
+	left: 0
+	top: 0
+	width: 100%
+	padding: 28px 0
+	font-size: 24px
+	.container
+		align-items: center
+	a
+		color: #fff
+		&:hover
+			color: $accent
+
+.logo
+	@include d-flex
+	margin: 0 auto
+	max-width: 220px
+	width: 100%	
