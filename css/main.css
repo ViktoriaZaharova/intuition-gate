@@ -56,6 +56,7 @@
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#FFF)), url("../img/bg2.png"), lightgray 0px -137.5px/100% 167.247% no-repeat;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFF 100%), url("../img/bg2.png"), lightgray 0px -137.5px/100% 167.247% no-repeat;
   background-size: cover;
+  background-position: center top;
 }
 .question-answer::before {
   content: "";
@@ -81,6 +82,9 @@
   font-weight: 500;
   margin: 0 auto 24px;
   line-height: 130%;
+}
+.question-answer .box-text p {
+  margin: 0;
 }
 .question-answer .box-text strong {
   font-size: 32px;
@@ -250,7 +254,10 @@
   text-align: left;
   line-height: 140%;
   margin: 0;
-  line-height: 0.8;
+  line-height: 1.1;
+}
+.about-intuition h2 span {
+  display: block;
 }
 
 .subtitle-text {
@@ -424,6 +431,7 @@
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   max-width: 565px;
+  z-index: -1;
 }
 .about-author__photo::before {
   content: "";
@@ -458,7 +466,7 @@
   margin: 0 auto 40px;
 }
 .about-author__content {
-  max-width: 340px;
+  max-width: 330px;
   margin: 76px 0 0;
 }
 
@@ -560,15 +568,6 @@
   position: relative;
   z-index: 1;
   background: #fff;
-}
-.theme-learn::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(10.74%, #FFF), color-stop(50%, rgba(255, 255, 255, 0.21))), -webkit-gradient(linear, left top, left bottom, color-stop(2.41%, #FFF), color-stop(35.19%, rgba(255, 255, 255, 0)), color-stop(35.19%, rgba(255, 255, 255, 0))), url("../img/theme-bg.png"), lightgray 0px -716.25px/100% 167.334% no-repeat;
   background: linear-gradient(0deg, #FFF 10.74%, rgba(255, 255, 255, 0.21) 50%), linear-gradient(180deg, #FFF 2.41%, rgba(255, 255, 255, 0) 35.19%, rgba(255, 255, 255, 0) 35.19%), url("../img/theme-bg.png"), lightgray 0px -716.25px/100% 167.334% no-repeat;
   background-position: center;
@@ -655,9 +654,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 17px 32px 20px 20px;
   line-height: 120%;
 }
@@ -691,7 +690,7 @@
   text-align: center;
   text-transform: uppercase;
   font-size: 40px;
-  font: 500px;
+  font-weight: 500;
   line-height: 120%;
 }
 
@@ -759,6 +758,8 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto 28px;
+  max-width: 80px;
+  width: 100%;
 }
 .stages-registration-box h3 {
   font-size: 32px;
@@ -890,6 +891,7 @@
   line-height: 120%;
   font-family: "Raleway", sans-serif;
   margin: 80px auto 0;
+  background: #B9AEFF;
 }
 
 .callback-wrapper {
@@ -909,7 +911,7 @@
 
 .callback-content {
   font-size: 40px;
-  max-width: 720px;
+  max-width: 630px;
   width: 100%;
 }
 .callback-content h3 {
@@ -921,8 +923,6 @@
   max-width: 400px;
   width: 100%;
   margin: 0 auto;
-}
-.form [type=submit] {
   width: 100%;
 }
 .form .label-checkbox {

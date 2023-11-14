@@ -1,7 +1,195 @@
-/*==========  Desktop First  ==========*/
+/*==========	Desktop First	==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1910px)
+	.question-answer::before
+		width: 431px
+		height: 573px
+
+@media only screen and (max-width: 1860px)
+	.home::after
+		left: 100px
+
+@media only screen and (max-width: 1560px)
+	.home::after
+		left: 10px
+
+	.home::before
+		height: 138px
+		width: 139px
+
+	.about-intuition::before
+		width: 627px
+		height: 431px
+
+	.practicum-result::before
+		width: 790px
+		height: 618px
+		right: 0
+		top: 82px
+		background: radial-gradient(46.46% 46.46% at 50% 53.54%, rgba(255, 255, 255, 0.00) 0%, #FFF 100%), url('../img/result-img-tablet.png'), lightgray -0.116px 0px / 117.371% 100% no-repeat
+		background-position: center bottom
+		background-size: 100%
+
+@media only screen and (max-width: 1360px)
+	.home
+		&::before, &::after
+			display: none
+
+	.question-answer::before
+		width: 331px
+		height: 473px
+
 @media only screen and (max-width: 1200px)
+	h1
+		font-size: 64px
+
+	.h1-number
+		font-size: 100px
+		&::before
+
+	.home
+		background: #000 url("../img/bg1-tablet.png") right center no-repeat
+		background-size: 719px
+
+	.question-answer
+		background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%), url('../img/bg2-tablet.png'), lightgray 50% no-repeat
+		background-size: cover
+		background-position: center top
+		&::before
+			top: 77px
+			width: 262px
+			height: 495px
+			background: url('../img/bg2-decor-tablet.png') no-repeat left center
+			background-size: 100%
+
+	.blockquote-box
+		margin: 0 0 64px 80px
+		&:last-child
+			margin: 0 0 64px 369px
+
+	.question-answer-box:last-child
+		margin-right: 0
+
+	.video-box
+		height: 381px
+
+	h2
+		font-size: 48px
+
+	.about-intuition
+		padding: 80px 0 130px
+		&::before
+			left: 0
+		&__content
+			margin: 80px 0 0 auto
+			max-width: 460px
+
+	.container
+		padding: 0 10px
+		max-width: 960px
+
+	.row
+		margin: 0 -10px
+
+	.w-50, .w-33, .w-25
+		padding: 0 10px
+
+	.main-question-wrapper
+		padding: 70px 45px 64px
+		h2
+			font-size: 40px
+		.box-text
+			margin: 48px auto
+
+	.for-you-box
+		padding: 0 10px 0 26px
+		margin: 0 0 50px
+		&:nth-child(4), &:nth-child(5), &:last-child
+			margin: 0 0 50px
+
+	.about-author
+		padding: 80px 0 88px
+		&__photo
+			max-width: 460px
+			&::before
+				width: 374.59px
+				height: 597.714px
+				left: -99px
+		&__content
+			margin: 50px 0 0
+
+		&__name
+			max-width: 320px
+			h3
+				font-size: 40px
+				margin: 0 auto 24px
+
+	.will-learn
+		margin: 60px 0 0
+		padding: 60px 0 42px
+		background-size: 940px
+		h2
+			margin: 0 0 50px
+		.btn
+			margin: 40px auto 0
+
+	.list-check li
+		margin: 0 0 32px
+		&:last-child
+			margin: 0
+
+	.theme-learn
+		margin: 0
+		padding: 79px 0 64px
+		background: linear-gradient(0deg, #FFF 10.74%, rgba(255, 255, 255, 0.21) 50%), linear-gradient(180deg, #FFF 2.41%, rgba(255, 255, 255, 0.00) 35.19%, rgba(255, 255, 255, 0.00) 35.19%), url('../img/theme-bg-tablet.png'), lightgray 50% no-repeat
+		background-position: center
+		background-size: cover
+
+		h2
+
+	.theme-learn-box
+		padding: 32px 26px
+
+	.practicum-result
+		padding: 56px 0 0
+		h2
+			margin: 0 0 63px
+
+	.awaits-after-box
+		padding: 24px
+		&__icon
+			width: 80px
+			height: 80px
+		&__body
+			width: calc(100% - 80px)
+			padding: 0 0 0 24px
+
+	.stages-registration
+		h2
+			font-size: 40px
+			margin: 0 auto 64px
+
+	.stages-title
+		font-size: 24px
+		margin: 0 auto 48px
+
+	.stages-registration-box
+		margin: 0 30px 0 0
+		&:last-child
+			margin: 0
+
+	.price::before
+		background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 63.65%, #FFF 97.68%), url('../img/price-bg-tablet.png'), lightgray -446.24px 0px / 187.547% 100% no-repeat
+		background-size: cover
+		background-position: center
+
+	.subscribe
+		background: url(../img/subscribe-bg-tablet.svg) no-repeat center bottom
+		background-size: 100%
+
+	footer
+		padding: 40px 0 20px
 
 @media only screen and (max-width: 992px)
 
@@ -13,4 +201,4 @@
 
 @media only screen and (max-width: 420px)
 
-@media only screen and (max-width: 370px)	
+@media only screen and (max-width: 370px)
