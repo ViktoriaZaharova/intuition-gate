@@ -105,6 +105,10 @@
 	.for-you-box
 		padding: 0 10px 0 26px
 		margin: 0 0 50px
+		&::before
+			left: 13px
+		&::after
+			left: 10px
 		&:nth-child(4), &:nth-child(5), &:last-child
 			margin: 0 0 50px
 
@@ -191,14 +195,537 @@
 	footer
 		padding: 40px 0 20px
 
-@media only screen and (max-width: 992px)
+@media only screen and (max-width: 900px)
+	.question-answer-box
+		padding: 20px
+		font-size: 18px
+		strong
+			font-size: 20px
+
+	.blockquote-box
+		font-size: 18px
+		strong
+			font-size: 20px
+
+	.question-answer::before
+		top: 0
+		width: 262px
+		height: 395px
+
+	.w-25
+		width: 33.33%
+
+	.about-intuition
+		&::before
+			width: 507px
+			height: 331px
+		&__content
+			max-width: 400px
+
+	h1
+		font-size: 30px
+		max-width: 350px
+		margin: 0 0 52px
+
+	.h1-number
+		font-size: 32px
+		&::before
+			height: calc(100% - 10px)
+
+	.blockquote-box:nth-child(2)
+		margin: 0 0 64px auto
+
+	.price
+		h2
+
+	.callback
+		.h3
+			font-size: 40px
+			margin: 44px auto 0
+
+	.callback-content
+		font-size: 30px
+		max-width: 470px
+		h3
+			font-size: 40px
 
 @media only screen and (max-width: 768px)
+	.w-50
+		width: 100%
+
+	.home
+		background-size: 700px
+
+	.author-info
+		margin: 0 0 48px
+		max-width: 350px
+		h3
+			font-size: 30px
+
+	h2
+		font-size: 36px
+
+	.about-intuition::before
+		width: 400px
+		height: 280px
+
+	.benefit, .for-you
+		margin: 100px 0 70px
+
+	.about-author
+		padding: 64px 0
+		h2
+			text-align: center
+			margin: 0 auto
+		&__name
+			margin: 24px auto 0
+			order: -1
+		&__photo
+			position: relative
+			margin: -24px auto 0
+			bottom: 0
+			right: 0
+			left: 0
+			transform: none
+			max-width: 448px
+			&::before
+				width: 170.776px
+				height: 314.464px
+				left: -20px
+		&__content
+			max-width: none
+			order: 1
+			margin: 32px 0 0
+
+	.list-decor li::before
+		margin: 0 8px 0 0
+
+	.theme-learn-box
+		min-height: auto
+		&__name
+			min-height: auto
+
+	.m-120
+		margin: 70px 0
+
+	.slogan
+		font-size: 24px
+
+	.stages-registration-box
+		max-width: 290px
+		margin: 0 20px 0 0
+		&:first-child
+			max-width: 240px
+		&:last-child
+			margin: 0
+		h3
+			margin: 0 auto 8px
+			font-size: 24px
+
+	.m-80
+		margin: 44px 0
+
+	.price
+		padding: 64px 0 0
+		&:before
+			height: 1000px
+		h2
+			font-size: 36px
+
+			.sum-value
+				font-size: 40px
+				&::before
+					width: 95px
+					height: 16px
+					left: -70px
+
+	.callback-content
+		text-align: center
+		max-width: none
+		margin: 0 auto 24px
+
+	.callback
+		overflow: hidden
+		.btn
+			margin: 0 auto
+		.h3
+			width: calc(100% + 30px)
+			font-size: 24px
+			margin: 44px -15px 0
+
+@media only screen and (max-width: 660px)
+	header
+		font-size: 18px
+
+	.row
+		justify-content: flex-start
+
+	.w-25
+		width: 50%
+
+	.w-33
+		width: 50%
+
+	.for-whom
+		margin: 64px 0
+		.row
+			justify-content: flex-start
+
+	.subscribe
+		.subtitle
+			font-size: 24px
 
 @media only screen and (max-width: 576px)
+	header
+		padding: 24px 0
 
-@media only screen and (max-width: 480px)
+	.logo
+		margin: 0 auto 16px
+		width: 100%
+		max-width: none
+		order: -1
+		img
+			max-width: 78px
 
-@media only screen and (max-width: 420px)
+	.link-mail, .link-phone
+		width: 50%
 
-@media only screen and (max-width: 370px)
+	.link-phone
+		text-align: right
+
+	.d-pc
+		display: none
+
+	.d-mobile
+		display: block
+
+	h1
+		font-size: 24px
+		max-width: 300px
+
+	.home
+		background: url('../img/home-bg-mobile.png') no-repeat right center
+		background-size: cover
+		padding: 203px 0 64px
+		.btn
+			margin: 0 auto
+
+	.home-content
+		max-width: none
+		width: 100%
+
+	.author-info
+		max-width: 300px
+		p
+			font-size: 16px
+		h3
+			font-size: 24px
+
+	.question-answer
+		padding: 20px 0
+		background: url('../img/bg2-mobile.png') no-repeat center top
+		background-size: cover
+		&::before
+			display: none
+		.box-text
+			font-size: 16px
+			strong
+				font-size: 18px
+
+		.text-descriotion
+			p
+				margin: 0 auto 24px
+			h4
+				font-size: 16px
+
+	.question-answer-box
+		padding: 8px 16px
+		font-size: 14px
+		margin: 0 0 16px
+		width: 100%
+		strong
+			font-size: 16px
+
+	.blockquote-box
+		margin: 0 0 32px
+		font-size: 16px
+		&:last-child
+			margin: 0 0 0 auto
+		strong
+			font-size: 16px
+			max-width: none
+
+	.video-wrapper
+		margin: 20px auto 0
+
+	.video-box
+		height: 158px
+		border-radius: 15px
+		iframe, video
+			border-radius: 15px
+
+	h2
+		font-size: 24px
+
+	.for-whom
+		h2
+			margin: 0 0 24px
+			max-width: 250px
+
+	.for-whom-box
+		margin: 0 0 32px
+		h3
+			font-size: 16px
+		&__number
+			margin: 0 0 -30px
+		.box-text
+			font-size: 14px
+
+	.about-intuition
+		padding: 64px 0
+		&::before
+			width: 100%
+			height: calc(100% - 185px)
+			background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url('../img/about-illustration-mobile.png'), lightgray -204.773px 0px / 225.857% 100% no-repeat
+			background-size: 100%
+			background-position: center
+		&__content
+			max-width: none
+			margin: 32px 0 0
+
+	.subtitle-text
+		font-size: 16px
+		margin: 8px 0 0
+
+	.box-text
+		font-size: 14px
+		p
+			margin: 0 0 16px
+		&:last-child
+			margin: 0
+
+	.benefit
+		margin: 64px 0 40px
+		h2
+			margin: 0 0 24px
+		.row
+			justify-content: flex-start
+
+	.benefit-box
+		margin: 0 0 24px
+		&__icon
+			margin: 0 auto 16px
+
+	.main-question-wrapper
+		padding: 32px 10px
+		.box-text
+			margin: 32px auto 48px
+		h2
+			font-size: 24px
+		.subtitle
+			font-size: 16px
+			margin: 0 auto 24px
+
+	.for-you
+		margin: 64px 0 34px
+		h2
+			margin: 0 0 30px
+			max-width: 270px
+
+	.for-you-box
+		padding: 0 10px 0 25px
+		margin: 0 0 30px
+		&::before
+			left: 13px
+		&:after
+			left: 10px
+		&__number
+			font-size: 32px
+			margin: -3px 0 8px
+
+	.about-author
+		background: url('../img/about-author-bg-mobile.png') no-repeat center top
+		background-size: cover
+		&::before
+			display: none
+		&__photo
+			max-width: 300px
+
+	.will-learn
+		padding: 64px 0 0
+		margin: 0
+		background: linear-gradient(0deg, rgba(255, 255, 255, 0.60) 0%, rgba(255, 255, 255, 0.60) 100%), radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.00) 0%, #FFF 79.69%), url('../img/learn-bg.jpg'), lightgray 50% no-repeat
+		background-size: cover
+		background-position: center
+		h2
+			margin: 0 0 24px
+			max-width: 300px
+		.list-check
+			margin: 0 0 24px
+			&:last-child
+				margin: 0
+		.btn
+			margin: 32px auto 0
+
+	.list-check
+		li
+			margin: 0 0 24px
+			&:last-child
+				margin: 0
+
+	.theme-learn
+		padding: 64px 0 0
+		h2
+			margin: 0 0 24px
+
+	.theme-learn-box
+		min-height: auto
+		padding: 24px 16px
+		h3
+			font-size: 16px
+			margin: 0 0 8px
+		&__name
+			min-height: auto
+
+	.theme-learn-descriltion
+		margin: 8px auto 0
+		font-size: 16px
+
+	.practicum-result
+		padding: 47px 0 64px
+		background: url('../img/result-img-mobile.png') no-repeat center
+		background-size: cover
+		&::before
+			display: none
+		h2
+			margin: 0 0 22px
+			max-width: 300px
+		.list-check
+			li
+				min-height: auto
+				padding: 0
+				margin: 0 0 16px
+				&:last-child
+					margin: 0
+
+	.awaits-after
+		margin: 0 0 64px
+		h2
+			margin: 0 0 24px
+			max-width: 300px
+
+	.awaits-after-box
+		padding: 16px 16px 16px 8px
+		&__icon
+			width: 40px
+			height: 40px
+		&__body
+			width: calc(100% - 40px)
+			padding: 0 0 0 15px
+		h3
+			font-size: 16px
+			margin: 0 0 8px
+
+	.slogan
+		margin: 8px auto 0
+		font-size: 16px
+		max-width: 300px
+
+	.stages-registration
+		padding: 64px 0
+		h2
+			font-size: 24px
+			max-width: 290px
+			margin: 0 auto 40px
+		.subtitle
+			font-size: 16px
+			margin: 0 auto 16px
+		&-box
+			margin: 0 auto 32px
+			&:last-child
+				margin: 0 auto
+			&__icon
+				max-width: 40px
+				margin: 0 auto 8px
+		.wrapper
+			flex-direction: column
+			align-items: center
+
+	.stages-title
+		margin: 0 auto 32px
+		font-size: 16px
+		max-width: 290px
+
+	.price
+		&:before
+			height: 727px
+			background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 63.65%, #FFF 97.68%), url('../img/price-bg-mobile.png'), lightgray -196.388px 0px / 187.547% 100% no-repeat
+			background-size: cover
+			background-position: center top
+		h2
+			font-size: 24px
+			margin: 0 auto 32px
+			.sum-value
+				font-size: 32px
+				&:before
+
+	.form-price
+		padding: 32px 16px
+		h3
+			font-size: 20px
+			margin: 0 auto 24px
+		input
+			padding: 0 10px 0 40px
+		.input-icon
+			width: 33px
+		[type="submit"]
+			margin: 24px auto 0			
+
+	input, textarea, select
+		height: 50px
+		font-size: 14px
+
+	textarea
+		height: 100px							
+
+	.callback
+		margin: 44px 0 32px
+
+	.callback-content
+		font-size: 16px
+		.box-text
+			font-size: 16px
+		h3
+			font-size: 24px
+
+	.subscribe
+		padding: 0 0 67px
+		background: url('../img/subscribe-bg-mobile.svg') no-repeat center bottom
+		background-size: 100%
+		.subtitle
+			font-size: 16px
+			margin: 0 auto 24px
+			max-width: 290px
+
+	.list-social
+		li
+			&:not(:last-child)
+				margin: 0 11px 0 0
+			a
+				width: 64px
+				height: 64px
+				min-width: 64px
+
+	.insta-text
+		margin: 0 auto 12px
+
+	footer
+		.box-text
+			font-size: 16px
+
+	.link-developer
+		margin: 20px auto 0
+
+	.modal__title
+		font-size: 24px	
+

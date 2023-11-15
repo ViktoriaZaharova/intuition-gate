@@ -427,6 +427,14 @@ a.color-accent:hover {
   margin: 0;
 }
 
+.d-pc {
+  display: block;
+}
+
+.d-mobile {
+  display: none;
+}
+
 .label-checkbox {
   position: relative;
   display: -webkit-box;
@@ -449,7 +457,7 @@ a.color-accent:hover {
 }
 
 .checkbox-custom {
-  margin: 0 10px 0 0;
+  margin: 2px 10px 0 0;
   position: relative;
   border-radius: 0;
   background-color: #fff;
